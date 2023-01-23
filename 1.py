@@ -19,7 +19,7 @@ Output: [3,4,6,16,17]
 """
 
 
-def runningSum(self, nums: List[int]) -> List[int]:
+def runningSum(nums: List[int]) -> List[int]:
 
     sums = [nums[0]]
     
