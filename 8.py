@@ -52,20 +52,13 @@ a.add_next(y)
 def detectCycle(head):
     location = {}
     count = 0
-    loc = head
     while head:
         if head in location:
-            print(head)
-            count = 0
-            # while count < location[head]:
-            #     count += 1
-            #     loc = loc.next
             return head
         else:
             location[head] = count
         count += 1
         head = head.next
-    return None
 
 
 print(detectCycle(x))
